@@ -347,6 +347,10 @@ section:after {
   filter: blur(2px);
   transition: 0.5s;
 }
+.img-projeto {
+  float: left; 
+  margin-right: 80px;
+}
 .img-responsive {
   max-width: 100%; 
   display:block; 
@@ -368,7 +372,25 @@ section:after {
   background-color: #005f97 !important;
   transition: .3s ease-out !important; 
 }
-
+.btn-projeto {
+  background-color: transparent; 
+  color: #005f97 !important; 
+  text-decoration: none !important;
+  border: 2px solid #008CBA;
+  font-size: 16px;
+  padding: 10px 35px;
+  display: inline-block;
+  transition-duration: 0.4s;
+  text-transform: uppercase;
+	letter-spacing: .08em;
+  border-radius: 2px;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+}
+.btn-projeto:hover {
+  background-color: #008CBA;
+  color: white !important;
+  text-decoration: none;
+}
 footer {
   background: #005f97;
   padding: 1.563rem 0;
@@ -381,32 +403,4 @@ footer a {
   color: #fff;
   text-align: center;
   margin: 0
-}
-
-.btn-projeto {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-.btn-projeto2 {
-  background-color: white; 
-  color: black; 
-  border: 2px solid #008CBA;
-}
-.btn-projeto2:hover {
-  background-color: #008CBA;
-  color: white;
-}
-.btn-projeto2:hover {
-  background-color: #008CBA;
-  color: white;
 }
