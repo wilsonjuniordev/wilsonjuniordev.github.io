@@ -404,3 +404,25 @@ footer a {
   text-align: center;
   margin: 0
 }
+.contact-form {
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+textarea, input {
+  width: 100%;
+  border: 2px solid #DDD;
+  padding: 6px 12px;
+  outline: none;
+  transition: 0.3s; 
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+textarea:focus, input:focus {
+    border-color: #008CBA; 
+}
