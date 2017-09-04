@@ -45,6 +45,9 @@ sup {
   position: relative;
   vertical-align: baseline
 }
+ul {
+  list-style-type:none;
+}
 sup {
   top: -.5em
 }
@@ -391,6 +394,56 @@ section:after {
   color: white !important;
   text-decoration: none;
 }
+.contact-form {
+  margin-top: 10px;
+  margin-bottom: 80px;
+}
+.form-group {
+  margin-bottom: 30px;
+}
+textarea, input {
+  width: 100%;
+  border: 2px solid #DDD;
+  padding: 6px 12px;
+  outline: none;
+  transition: 0.3s; 
+  background-color: transparent;
+  border-radius: 5px;
+}
+textarea:focus, input:focus {
+    border-color: #008CBA; 
+}
+.button {
+  display: inline-block;
+  color: #008CBA;
+  cursor: pointer;
+  background-color: white;
+  border: 2px solid #008CBA;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 1.8rem 0.4rem rgba(0, 140, 186, 0.3);
+  transition: 0.3s; 
+}
+.button:hover {
+    text-decoration: none;
+    color: white;
+    background: #008CBA; 
+}
+p.button-social-group {
+  text-align: center;
+  margin-top: 20px;
+}
+p.button-social-group a {
+  margin: 0 20px 0 20px;
+  color: black;
+  display: inline-block;
+  font-size: 40px;
+  width: 38px;
+  transition: all 0.2s ease-out;
+}
+p.button-social-group a:hover {
+  color: #008CBA;
+}
 footer {
   background: #005f97;
   padding: 1.563rem 0;
@@ -403,26 +456,4 @@ footer a {
   color: #fff;
   text-align: center;
   margin: 0
-}
-.contact-form {
-  margin-top: 20px;
-  margin-bottom: 80px;
-}
-
-.form-group {
-  margin-bottom: 30px;
-}
-
-textarea, input {
-  width: 100%;
-  border: 2px solid #DDD;
-  padding: 6px 12px;
-  outline: none;
-  transition: 0.3s; 
-  background-color: transparent;
-  border-radius: 5px;
-}
-
-textarea:focus, input:focus {
-    border-color: #008CBA; 
 }
