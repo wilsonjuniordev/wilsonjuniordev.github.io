@@ -12,6 +12,10 @@ a:hover {
   color: #33bbdf;
 }
 
+p {
+  color: #E7E5FB;
+}
+
 header, footer, div.page {
   /* width: 760px; */
   margin: 0 auto;
@@ -92,7 +96,7 @@ h4 .label {
 
 
 .jumbotron {
-  background-color: #005f97 !important;
+  background-color: #14578e !important;
   height: 500px;
   /* position: fixed; */
   width: 100%;
@@ -108,7 +112,7 @@ h4 .label {
   /* font-size: 5.875rem; */
   font-weight: 900;
   margin: 0 0 40px;
-  text-shadow: 5px 5px #004c79;
+  text-shadow: 5px 5px #14578e;
 }
 /* @media only screen and (max-width: 47.5rem) {
   .jumbotron .post-title {
@@ -121,7 +125,7 @@ h4 .label {
   font-size: 2.25rem
 }
 .header-post {
-  background-color: #005f97;
+  background-color: #14578e;
   height: 600px;
   min-height: 31.25rem;
   position: fixed;
@@ -182,17 +186,51 @@ main {
   justify-content: center;
 }
 
+
+.title-pages {
+  margin-top: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #48F2EF;
+}
+
+h3 {
+  position: relative;
+  bottom: 2rem;
+  width: 100%;
+  padding: 0;
+}
+h3:after {
+  display: inline-block;
+  margin: 0 0 8px 5px;
+  height: 3px;
+  content: " ";
+  text-shadow: none;
+  background-color: #E7E5FB;
+  width: 80px;
+}
+h3:before {
+  display: inline-block;
+  margin: 0 5px 8px 0;
+  height: 3px;
+  content: " ";
+  text-shadow: none;
+  background-color: #E7E5FB;
+  width: 80px;
+}
+
+/* 
 .tituloPagina {
   text-align: center;
   text-transform: uppercase;
   text-decoration: underline;
 }
+
 .tituloPagina h2, .tituloPagina p {
   color: #004c79;
 }
 
 .title-pages {
-  /* font-size: 2em; */
   position: relative;
   margin: 0rem auto 1em;
   padding: 1em 1em .25em 1em;
@@ -201,8 +239,6 @@ main {
 }
 .title-pages:after {
   position: absolute;
-  /* top: 100%; */
-  /* left: 50%; */
   width: 240px;
   height: 4px;
   margin-left: -120px;
@@ -211,24 +247,76 @@ main {
 }
 .title-pages h2, .title-pages p {
   color: #004c79;
-}
+} */
+
 
 
 
 .row-icon {
-	font-size: 5rem;
+  color: #E7E5FB;
+	font-size: 6.5rem;
 	text-align: center;
 }
-
 .row-icon > div > img {
 	width: 5rem;
 	height: 5rem;
 }
+.skills-icon:hover {
+  color: #48F2EF;
+}
+
+
+
+
+/* 
+textarea, input {
+  width: 100%;
+  border: 2px solid #DDD;
+  padding: 6px 12px;
+  outline: none;
+  transition: 0.3s; 
+  background-color: transparent;
+  border-radius: 5px;
+}
+textarea:focus, input:focus {
+    border-color: #008CBA; 
+} */
+
+.btnCor {
+  display: inline-block;
+  color: #006E90;
+  cursor: pointer;
+  background-color: fff;
+  border: 2px solid #008CBA;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 1.8rem 0.4rem rgba(0, 140, 186, 0.3);
+  transition: 0.3s; 
+}
+
+
+button {
+  color: #E7E5FB !important;
+  background-color: #006E90;
+  border: 2px solid #E7E5FB !important;
+  padding: 0.2rem 2rem 0.2rem 2rem !important;
+  display: inline-block;
+}
+button:hover {
+  color: #006E90 !important;
+  background-color: #48F2EF;
+  border: 2px solid #48F2EF !important;
+  transition-duration: 0.4s;
+  text-decoration: none;
+}
+
+
+
 
 
 footer {
-  background-color: #0e0b16;
-  color: #fff
+  background-color: #122C34;
+  color: #E7E5FB
 }
 footer ul {
   list-style: none;
@@ -246,10 +334,10 @@ footer ul.buttons li {
   margin-right: .5em
 }
 footer a {
-  color: #fff
+  color: #E7E5FB
 }
 footer a:hover {
-  color: #4717f6;
+  color: #48F2EF;
   text-decoration: none
 }
 
