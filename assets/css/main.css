@@ -226,40 +226,6 @@ h3:before {
   background-color: #E7E5FB;
   width: 80px;
 }
-
-/* 
-.tituloPagina {
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: underline;
-}
-
-.tituloPagina h2, .tituloPagina p {
-  color: #004c79;
-}
-
-.title-pages {
-  position: relative;
-  margin: 0rem auto 1em;
-  padding: 1em 1em .25em 1em;
-  text-align: center;
-  text-transform: uppercase;
-}
-.title-pages:after {
-  position: absolute;
-  width: 240px;
-  height: 4px;
-  margin-left: -120px;
-  content: '';
-  background-color: #004c79;
-}
-.title-pages h2, .title-pages p {
-  color: #004c79;
-} */
-
-
-
-
 .row-icon {
   color: #E7E5FB;
 	font-size: 6.5rem;
@@ -272,25 +238,6 @@ h3:before {
 .skills-icon:hover {
   color: #48F2EF;
 }
-
-
-
-
-/* 
-textarea, input {
-  width: 100%;
-  border: 2px solid #DDD;
-  padding: 6px 12px;
-  outline: none;
-  transition: 0.3s; 
-  background-color: transparent;
-  border-radius: 5px;
-}
-textarea:focus, input:focus {
-    border-color: #008CBA; 
-} */
-
-
 
 button.btn-section, a.btn-section {
   color: #E7E5FB ;
@@ -338,10 +285,85 @@ footer a:hover {
 
 
 
+.navbar {
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	border-radius: 0px;
+}
+
+.navbar-default {
+  border-color: transparent !important;
+  /* color: white !important; */
+}
+.navbar-default#navbarPrincipal {
+  /* background-color: #122634; */
+  background-color: #14578e;
+}
+
+a#osvaldoCabralNav {
+	color: #e6e6e6;
+	font-size: 30px;
+	text-decoration: none;
+}
+
+/* button#btnParaCelular {
+	margin-top: 85px;
+} */
+/* #linksMenu {
+	display: absolute;
+	margin-top: 30px;
+	font-size: 4vh;
+} */
+
+#linksMenu li a {
+	/* font-size: 15px; */
+	letter-spacing: 1px;
+	color: #e7e5fb;
+	/* position: relative; */
+}
+
+#linksMenu li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 7px;
+  left: 0;
+  background-color: #e7e5fb;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#linksMenu li a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
 
 
 
 
+
+
+
+
+
+
+
+
+
+/* #mainNav {
+  background-color: #122C34 !important;
+  color: #fff !important;
+}
+.navbar-default {
+  border-color: #fff !important;
+  color: white !important;
+} */
 
 
 

@@ -19,9 +19,39 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" rel="stylesheet" />
   </head>
 
-  <body data-spy="scroll" data-target="#navigation" data-offset="120">
+  <!-- <body data-spy="scroll" data-target="#navigation" data-offset="120"> -->
+  <!-- <body onload="redirecionar()"> -->
+  <body>
 
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top affix-top">
+
+
+    <nav class="navbar navbar-default navbar-fixed-top affix-top" id="navbarPrincipal" >
+      <div class="container" id="container-header">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed"
+            id="btnParaCelular" data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span> <span
+              class="icon-bar"></span> <span class="icon-bar"></span> <span
+              class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand page-scroll scrollTo" id="osvaldoCabralNav" href="#top">{ } Wilson Junior</a>
+        </div>
+        <div class="collapse navbar-collapse"
+          id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right" id="linksMenu"
+            onclick="abrirFecharMenu()">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- <nav id="mainNav" class="navbar navbar-default navbar-fixed-top affix-top" >
       <div class="container">
         <div role="navigation" id="navigation">
           <div class="navbar-header">
@@ -45,7 +75,7 @@
           </div>
         </div>
       </div>
-    </nav>
+    </nav> -->
 
         
     <header class="header-post" role="banner">
@@ -65,7 +95,7 @@
           </div>
           <div class="row valign-center">
             <div class="col-xs-12 col-sm-4 col-md-2">
-              <a href="https://github.com/wilsonjuniorwj/" target="_blank"><img class="img-responsive img-circle blur" src="assets/img/profile.jpg" alt="profile"/></a>
+              <a href="https://github.com/wilsonjuniorwj/" target="_blank"><img class="img-responsive img-circle blur" src="assets/img/profile.jpg" title="Wilson Junior" alt="profile"/></a>
             </div>
             <div class="col-xs-12 col-sm-8 col-md-10">
               <p>Faço Bacharelado em Sistemas de Informação e atuo na área de desenvolvimento de sistemas.</p>
@@ -232,7 +262,7 @@
 
     <script src="assets/jquery/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <!-- <script src="assets/js/main.js"></script> -->
+    <script src="assets/js/script.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
