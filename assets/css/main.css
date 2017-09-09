@@ -17,10 +17,11 @@ p {
 }
 
 header, footer, div.page {
+  padding: 5px;
   /* width: 760px; */
   margin: 0 auto;
   background: #daeef3;
-  padding: 20px 30px;
+  /* padding: 20px 30px; */
 }
 
 header h1 {
@@ -345,15 +346,45 @@ a#osvaldoCabralNav {
 }
 
 
+textarea:focus, input:focus {
+    border-color: #48F2EF !important; 
+}
+
+
+
+/* .nav>li>a {
+  padding: 10px 25px !important;
+  color: rgba(0, 0, 0, 0.7) !important;
+} */
+
+.nav-pills>li>a {
+  color: #e7e5fb;
+  border: 2px solid #E7E5FB ;
+}
+.nav-pills>li>a:hover {
+  border: 2px solid #E7E5FB ;
+  background-color: transparent !important;
+  color: #E7E5FB;
+  border-color: white !important;
+  border-radius: 2 !important;
+}
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:hover,
+.nav-pills>li.active>a:focus {
+  color: #006D90 !important;
+  background-color: #48f2ef !important;
+  transition: .3s ease-out !important; 
+  border: 2px solid #48f2ef ;
+}
 
 
 
 
 
-
-
-
-
+.text-center {
+  text-align: center
+}
 
 
 /* #mainNav {
