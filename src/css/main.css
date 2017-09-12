@@ -1,9 +1,11 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  /* font-size: 16px !important; */
 }
 p {
   color: #E7E5FB;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #e7e5fb;
 }
 .blur {
   filter: none;
@@ -89,7 +91,6 @@ header .subtitle {
 @media only screen and (max-width: 37.5rem) {
   header .subtitle {
       font-size: 1.25rem;
-      /* color: rgba(231, 229, 251, 0); */
   }
 }
 main {
@@ -137,7 +138,7 @@ main {
 .skills-icon:hover {
   color: #48F2EF;
 }
-section.projetos-height {
+section.project-height {
   min-height: 430px;
 }
 .nav.nav-pills li a {
@@ -205,19 +206,24 @@ footer a:hover {
   color: #48F2EF;
   text-decoration: none
 }
-nav.navbar-background-color {
+.row.footer-margin-top {
+  margin-top: 8px;
+}
+footer.footer-margin-top {
+  margin-top: 20px;
+}
+.confirmation-margin {
+  margin-top: 100px; 
+  margin-bottom: 100px;
+}
+nav.navbar-background-color,
+header.header-background-color,
+.confirmation-background-color {
   background-color: #14578e;
 }
-header.header-background-color {
-  background-color: #14578e;
-}
-section.sobre-background-color {
-  background-color: #006E90;
-}
-section.projetos-background-color {
-  background-color: #006E90;
-}
-section.contato-background-color {
+section.about-background-color,
+section.projects-background-color,
+section.contact-background-color {
   background-color: #006E90;
 }
 footer.footer-background-color {
