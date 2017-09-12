@@ -1,0 +1,29 @@
+{
+  "name": "wilsonjuniorwj.github.io",
+  "version": "1.0.0",
+  "description": "Site Pessoal: [wilsonjunior.net](https://wilsonjunior.net/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wilsonjuniorwj/wilsonjuniorwj.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wilsonjuniorwj/wilsonjuniorwj.github.io/issues"
+  },
+  "homepage": "https://github.com/wilsonjuniorwj/wilsonjuniorwj.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.8.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0"
+  }
+}
