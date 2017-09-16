@@ -179,12 +179,6 @@ h2 span:after{
       display: block;
       align-items: center
   }
-  .sm-show {
-      display: block
-  }
-  .sm-hide {
-      display: none
-  }
 }
 .skills-icon {
   color: #f1f1f1;
@@ -288,6 +282,12 @@ small {
   }
   .col-infos li span {
     display: none;
+  }
+  .col-infos li.item-1:before {
+    content: "Fone:"
+  }
+  .col-infos li.item-2:before {
+    content: "Fone:"
   }
   .col-infos li.item-3:before {
     content: "Email:"

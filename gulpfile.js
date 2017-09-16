@@ -40,15 +40,15 @@ var gulp        = require('gulp'),
     /**
      * Imagemin Task
      */
-    gulp.task('imagemin', function() {
-        return gulp.src('src/img/**/*.{jpg,png,gif}')
-            .pipe(plumber())
-            .pipe(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true }))
-            .pipe(gulp.dest('assets/img/'))
-            .pipe(browserSync.reload({
-                stream: true
-            }))
-    });
+    // gulp.task('imagemin', function() {
+    //     return gulp.src('src/img/**/*.{jpg,png,gif}')
+    //         .pipe(plumber())
+    //         .pipe(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true }))
+    //         .pipe(gulp.dest('assets/img/'))
+    //         .pipe(browserSync.reload({
+    //             stream: true
+    //         }))
+    // });
 
     // Configure the browserSync task
     gulp.task('browser-sync', function() {
@@ -66,7 +66,7 @@ var gulp        = require('gulp'),
     gulp.task('watch', function () {
         gulp.watch('src/css/main.css', ['minify-css']);
         gulp.watch('src/js/**/*.js', ['minify-js']);
-        gulp.watch('src/img/**/*.{jpg,png,gif}', ['imagemin']);
+        // gulp.watch('src/img/**/*.{jpg,png,gif}', ['imagemin']);
         gulp.watch('*.html');
     });
     
@@ -74,4 +74,4 @@ var gulp        = require('gulp'),
      * Default task, running just `gulp` will compile the stylus,
      * launch BrowserSync & watch files.
      */
-    gulp.task('default', ['minify-js', 'minify-css', 'imagemin', 'browser-sync', 'watch']);
+    gulp.task('default', ['minify-js', 'minify-css', /* 'imagemin', */ 'browser-sync', 'watch']);
