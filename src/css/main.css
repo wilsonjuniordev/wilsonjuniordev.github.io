@@ -5,19 +5,24 @@ body {
   background-color: #f1f1f1;
   height: 100%
 }
-section {
-  background-color: #f1f1f1;
-  margin: 50px auto
-}
-section .item {
-  margin: 20px 0
-}
 p {
   line-height: 25px;
 }
-.valign-center {
-  display: flex;
-  align-items: center
+ul {
+  color: #f1f1f1;
+  list-style: none;
+  padding: 0
+}
+ul li {
+  margin: 0;
+  padding: 0
+}
+ul.buttons {
+  font-size: 2em
+}
+ul.buttons li {
+  float: left;
+  margin-right: .5em
 }
 .blur {
   filter: none;
@@ -46,6 +51,15 @@ nav.navbar-default .navbar-brand:hover,
 nav.navbar-default .navbar-brand:focus {
   color: #f1f1f1;
   background-color: transparent;
+}
+.navbar-brand:after {
+  transition: all .4s;
+  content: '{ } Wilson Junior';
+}
+@media (max-width: 320px) {
+  .navbar-brand:after {
+      content: '{ } WJ';
+  }
 }
 .nav.navbar-nav.navbar-right li a,
 .nav.navbar-nav.navbar-right li a:hover,
@@ -80,8 +94,14 @@ header {
 }
 header .content {
   text-align: center;
-  padding: 15.75rem 0 4.125rem 0;
+  padding: 10.75rem 0 4.125rem 0;
+  /* padding: 15.75rem 0 4.125rem 0; */
   margin: auto;
+}
+@media only screen and (min-width: 1440px) {
+  header .content {
+    padding: 30.75rem 0 4.125rem 0;
+  }
 }
 header .title {
   color: #f1f1f1;
@@ -106,29 +126,31 @@ header .subtitle {
   }
 }
 main {
-  /* font-size: 1.66rem; */
   font-family: 'Open Sans', sans-serif;
   top: 500px;
   top: 100vh;
   position: relative;
 }
-
+section {
+  background-color: #f1f1f1;
+}
+section .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 h2{
-  text-align: center;
+  margin-top: 0px;
   margin-bottom: 60px;
   color:#14578e;
   text-transform: uppercase
 }
-
 h2 span{
   position:relative;
 }
-
 h2 span:before,
 h2 span:after{
   position:absolute;
 }
-
 h2 span:before{
   content:"";
   top:57px;
@@ -137,7 +159,6 @@ h2 span:before{
   height:4px;
   background:#14578e;
 }
-
 h2 span:after{
   content:"</>";
   color:#14578e;
@@ -149,6 +170,22 @@ h2 span:after{
   background:#f1f1f1;
   
 }
+.valign-center {
+  display: flex;
+  align-items: center
+}
+@media (max-width: 768px) {
+  .valign-center {
+      display: block;
+      align-items: center
+  }
+  .sm-show {
+      display: block
+  }
+  .sm-hide {
+      display: none
+  }
+}
 .skills-icon {
   color: #f1f1f1;
 	font-size: 6.5rem;
@@ -156,7 +193,6 @@ h2 span:after{
 }
 .skills-icon:hover {
   color: #708090;
-  /* color: #48F2EF; */
 }
 @media (max-width: 320px) {
   .skills-icon {
@@ -182,17 +218,32 @@ h2 span:after{
   transition: .3s ease-out; 
   border: 2px solid #14578e ;
 }
-.row .tab-margin-top {
+@media (max-width: 767px) { 
+  .nav-pills li {
+    float: none;
+    border: 1px solid #f1f1f1;
+    text-align: center;
+  }
+  .nav-pills li.active a{
+    border: none;
+  }
+}
+.tab-content {
   margin-top: 50px;
 }
-a.btn-section {
+@media (max-width: 430px) {
+  .tab-content {
+    text-align: center;
+  }
+}
+a.btn-projetos {
   color: #14578e ;
   background-color: #f1f1f1 ;
   border: 2px solid #14578e ;
   padding: 0.2rem 2rem 0.2rem 2rem;
   display: inline-block;
 }
-a.btn-section:hover {
+a.btn-projetos:hover {
   color: #f1f1f1 ;
   background-color: #14578e;
   border: 2px solid #14578e;
@@ -213,167 +264,24 @@ button.btn-section:hover {
   transition-duration: 0.4s;
   text-decoration: none;
 }
-@media (max-width: 430px) {
-  .btn-section-center {
-    text-align: center;
-  }
-}
 .row input:focus, 
 .row textarea:focus {
   border-color: #708090; 
 }
-footer {
-  color: #f1f1f1
+section .item {
+  margin: 0 0 20px 20px
 }
-ul {
-  color: #f1f1f1;
-  list-style: none;
-  padding: 0
-}
-ul li {
-  margin: 0;
-  padding: 0
-}
-ul.buttons {
-  font-size: 2em
-}
-ul.buttons li {
-  float: left;
-  margin-right: .5em
-}
-footer a {
-  color: #f1f1f1
-}
-footer a:hover {
-  color: #708090;
-  text-decoration: none
-}
-/* .row.footer-margin-top {
-  margin-top: 8px;
-} */
-.footer-margin-top {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.confirmation-margin {
-  margin-top: 100px; 
-  margin-bottom: 100px;
-}
-nav.navbar-background-color,
-header.header-background-color,
-.confirmation-background-color,
-.skills-background-color,
-section.contact-background-color,
-.header-background-color,
-.jumbotron.top {
-  background-color: #0A2C4A;
-}
-
-footer.footer-background-color {
-  background-color: #000A11;
-}
-
-.sm-show {
-  display: none
-}
-.sm-hide {
-  display: block
-}
-@media (max-width: 768px) {
-  .valign-center {
-      display: block;
-      align-items: center
-  }
-  .sm-show {
-      display: block
-  }
-  .sm-hide {
-      display: none
-  }
-}
-.img-responsive {
-  margin-bottom: 15px;
-}
-
-section.contact-position {
-  /* margin-top: 50px; */
-  margin-bottom: 0px;
-  /* padding-bottom: 0px; */
-  /* position: relative */
-}
-.contact-icon a {
-  color: #f1f1f1;
-	font-size: 4.5rem;
-	text-align: center;
-}
-.contact-icon:hover a {
-  color: #708090;
-}
-@media (max-width: 320px) {
-  .contact-icon a {
-    width: 33.33%
-  }
-}
-.jumbotron {
-  margin-top: 51px;
-  position: relative
-}
-.jumbotron.top {
-  /* background: #0A2C4A; */
-  color: #f1f1f1
-}
-
-.margin-top-bottom {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-.margin-top-bottom-contact {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-.navbar-brand:after {
-  transition: all .4s;
-  content: '{ } Wilson Junior';
-}
-@media (max-width: 320px) {
-  .navbar-brand:after {
-      content: '{ } WJ';
-  }
-}
-
-
-.post-single .post-socials .item {
-  /* padding: 0 5px; */
-  /* display: inline-block; */
-  /* height: 20px */
-}
-.post-single .post-socials .item iframe {
-  /* vertical-align: bottom */
-}
-
-.col-infos ul {
-  
-  /* width: 100%;
-  float: left */
-}
-
 .col-infos li {
-  /* height: 32px; */
-  /* line-height: 32px; */
   font-size: 16px;
-  /* font-weight: 300 */
 }
 .col-infos li span {
   float: left;
   width: 32px;
-  /* height: 32px; */
-  /* line-height: 32px; */
   font-size: 22px
 }
 small {
   font-size: 80%
 }
-
 @media (max-width: 1024px) {
   .icon-section-center {
     text-align: center;
@@ -388,16 +296,29 @@ small {
     content: "Skype:"
   }
 }
-
-/* .col-infos li.item-5:hover,
-.col-infos li.item-5 a:hover {
-  color: #2FDF4A;
+footer a {
+  color: #f1f1f1
 }
-.col-infos li.item-6:hover,
-.col-infos li.item-6 a:hover {
-  color: #1B5DED;
+footer a:hover {
+  color: #708090;
+  text-decoration: none
 }
-.col-infos li.item-7:hover,
-.col-infos li.item-7 a:hover {
-  color: #1A1718;
-} */
+footer .row {
+  margin: 20px;
+}
+.navbar-background-color,
+.header-background-color,
+.skills-background-color,
+.contact-background-color {
+  background-color: #0A2C4A;
+}
+footer.footer-background-color {
+  background-color: #000A11;
+}
+.confirmation-margin {
+  margin-top: 100px; 
+  margin-bottom: 100px;
+}
+.confirmation-background-color {
+  background-color: #0A2C4A;
+}

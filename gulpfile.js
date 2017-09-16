@@ -25,7 +25,8 @@ var gulp        = require('gulp'),
      * Javascript Task
      */
     gulp.task('minify-js', function(){
-        return gulp.src('src/js/**/*.js')
+        // return gulp.src('src/js/**/*.js')
+        return gulp.src('src/js/main.js')
             .pipe(plumber())
             .pipe(concat('main.js'))
             .pipe(uglify())
