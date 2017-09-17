@@ -56,7 +56,7 @@ nav.navbar-default .navbar-brand:focus {
   transition: all .4s;
   content: '{ } Wilson Junior';
 }
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .navbar-brand:after {
       content: '{ } WJ';
   }
@@ -87,43 +87,6 @@ nav.navbar-default .navbar-brand:focus {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
-/* header {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-}
-header .content {
-  text-align: center;
-  padding: 10.75rem 0 4.125rem 0;
-  margin: auto;
-}
-@media only screen and (min-width: 1440px) {
-  header .content {
-    padding: 30.75rem 0 4.125rem 0;
-  }
-}
-header .title {
-  color: #f1f1f1;
-  font-size: 5.875rem;
-  font-weight: 900;
-  margin: 0 0 40px 0;
-  text-shadow: 5px 5px rgba(18, 44, 52, 0.3);
-}
-header .subtitle {
-  color: rgba(231, 229, 251, 0.7);
-  font-style: normal;
-  font-size: 2.25rem;
-}
-@media only screen and (max-width: 37.5rem) {
-  header .title {
-      font-size: 3.75rem;
-  }
-}
-@media only screen and (max-width: 37.5rem) {
-  header .subtitle {
-      font-size: 1.25rem;
-  }
-} */
 .jumbotron {
   margin-top: 51px;
   position: relative
@@ -175,6 +138,17 @@ h2 span:after{
   background:#f1f1f1;
   
 }
+@media (max-width: 426px) {
+  h2{
+    margin-bottom: 70px;
+  }
+  h2 span:before{
+    top:67px;
+  }
+  h2 span:after {
+    top:52px;
+  }
+}
 .valign-center {
   display: flex;
   align-items: center
@@ -197,7 +171,7 @@ h2 span:after{
 .skills-icon:hover {
   color: #708090;
 }
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .skills-icon {
     width: 50%
   }
@@ -274,9 +248,6 @@ button.btn-section:hover {
 section .item {
   margin: 0 0 20px 20px
 }
-.col-infos li {
-  font-size: 16px;
-}
 .col-infos li span {
   float: left;
   width: 32px;
@@ -305,6 +276,28 @@ small {
     content: "Skype:"
   }
 }
+@media (max-width: 375px) {
+  .col-infos {
+    font-size: 12px;
+    transition: all .4s;
+  }
+  .col-infos li.item-1:before {
+    content: ""
+  }
+  .col-infos li.item-2:before {
+    content: ""
+  }
+  .col-infos li.item-3:before {
+    content: ""
+  }
+  .col-infos li.item-4:before {
+    content: "Skype:"
+  }
+}
+footer {
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
 footer a {
   color: #f1f1f1
 }
@@ -317,8 +310,18 @@ footer .row {
 }
 footer p {
   color: #f1f1f1;
-  /* list-style: none;
-  padding: 0 */
+}
+@media (max-width: 991px) {
+  .small-screen-text-center {
+      text-align: center;
+  }
+}
+p.social a {
+  color: #f1f1f1;
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  font-size: 25px;
 }
 .navbar-background-color,
 .header-background-color,
