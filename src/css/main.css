@@ -87,7 +87,7 @@ nav.navbar-default .navbar-brand:focus {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
-header {
+/* header {
   height: 100%;
   width: 100%;
   position: fixed;
@@ -95,7 +95,6 @@ header {
 header .content {
   text-align: center;
   padding: 10.75rem 0 4.125rem 0;
-  /* padding: 15.75rem 0 4.125rem 0; */
   margin: auto;
 }
 @media only screen and (min-width: 1440px) {
@@ -124,19 +123,25 @@ header .subtitle {
   header .subtitle {
       font-size: 1.25rem;
   }
+} */
+.jumbotron {
+  margin-top: 51px;
+  position: relative
+}
+.jumbotron.top {
+  color: #f1f1f1
 }
 main {
   font-family: 'Open Sans', sans-serif;
   top: 500px;
   top: 100vh;
-  position: relative;
 }
 section {
   background-color: #f1f1f1;
 }
 section .container {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 h2{
   margin-top: 0px;
@@ -176,8 +181,12 @@ h2 span:after{
 }
 @media (max-width: 768px) {
   .valign-center {
-      display: block;
-      align-items: center
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+  .center-block {
+    margin-bottom: 20px;
   }
 }
 .skills-icon {
@@ -225,7 +234,7 @@ h2 span:after{
 .tab-content {
   margin-top: 50px;
 }
-@media (max-width: 430px) {
+@media (max-width: 768px) {
   .tab-content {
     text-align: center;
   }
@@ -305,6 +314,11 @@ footer a:hover {
 }
 footer .row {
   margin: 20px;
+}
+footer p {
+  color: #f1f1f1;
+  /* list-style: none;
+  padding: 0 */
 }
 .navbar-background-color,
 .header-background-color,
