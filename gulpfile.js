@@ -11,9 +11,11 @@ var gulp        = require('gulp'),
      * Css Task
      */
     gulp.task('minify-css', function() {
-        return gulp.src('src/css/main.css')
+        // return gulp.src('src/css/main.css')
+        return gulp.src('src/css/*.css')
             .pipe(plumber())
             .pipe(cleanCSS({ compatibility: 'ie8' }))
+            .pipe(concat('main.css'))
             .pipe(rename({ suffix: '.min' }))
             .pipe(gulp.dest('assets/css'))
             .pipe(browserSync.reload({

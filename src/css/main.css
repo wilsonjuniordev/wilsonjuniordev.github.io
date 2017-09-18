@@ -319,7 +319,6 @@ footer p {
 .social-icon a {
   color: #f1f1f1;
 	font-size: 4rem;
-	/* text-align: center; */
 }
 .navbar-background-color,
 .header-background-color,
@@ -329,11 +328,4 @@ footer p {
 }
 footer.footer-background-color {
   background-color: #000A11;
-}
-.confirmation-margin {
-  margin-top: 100px; 
-  margin-bottom: 100px;
-}
-.confirmation-background-color {
-  background-color: #0A2C4A;
 }
