@@ -1,5 +1,6 @@
-# Wilson Junior
-Personal Website: [wilsonjunior.net](https://wilsonjunior.net/)
+# [wilsonjunior.net](https://wilsonjunior.net/) <img src="https://github.com/wilsonjuniorwj/wilsonjuniorwj.github.io/blob/master/assets/img/favicon/favicon-16x16.png">
+
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/wilsonjuniorwj/wilsonjuniorwj.github.io/master/LICENSE)
 
 ## Starting
 
@@ -13,3 +14,8 @@ npm install
 Build assets and serve
 ```
 gulp
+```
+
+## License
+
+It is free under the [open-source MIT license](/LICENSE).
