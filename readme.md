@@ -16,6 +16,14 @@ Build assets and serve
 gulp
 ```
 
+## Features
+
+- HTML 5
+- CSS 3
+- JavaScript
+- Bootstrap
+- Gulp
+
 ## License
 
 It is free under the [open-source MIT license](/LICENSE).
