@@ -4,19 +4,13 @@ $(function () {
 
 });
 
-/* =========================================
- *  scrollTo
- *  =======================================*/
-
 function scrollTo() {
-
-    $().ready(function() {
-        $(".scrollTo").click(function(t) {
-            t.preventDefault();
-            var o = $(this).attr("href");
-            $("body").animate({
-                scrollTop: $(o).offset().top - 50
-            }, 600)
-        })
+    $().ready(function ($) {
+        $(".scrollTo").click(function (event) {
+            event.preventDefault();
+            $('html,body').animate({ 
+                scrollTop: $(this.hash).offset().top - 50 
+            }, 600);
+        });
     });
 }
