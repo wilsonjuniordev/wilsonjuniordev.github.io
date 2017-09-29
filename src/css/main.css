@@ -168,7 +168,7 @@ h2 span:after{
 	font-size: 6.5rem;
 	text-align: center;
 }
-.skills-icon:hover {
+.hover-icon:hover {
   color: #708090;
 }
 @media (max-width: 375px) {
