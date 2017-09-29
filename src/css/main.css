@@ -248,10 +248,17 @@ button.btn-section:hover {
 section .item {
   margin: 0 0 20px 20px
 }
+.col-infos li a{
+  color: #f1f1f1;
+}
 .col-infos li span {
+  color: #f1f1f1;
   float: left;
   width: 32px;
   font-size: 22px
+}
+.col-infos li span:hover {
+  color: #708090;
 }
 small {
   font-size: 80%
@@ -264,16 +271,19 @@ small {
     display: none;
   }
   .col-infos li.item-1:before {
-    content: "Fone:"
+    content: "Fone: "
   }
   .col-infos li.item-2:before {
-    content: "Fone:"
+    content: "Fone: "
   }
   .col-infos li.item-3:before {
-    content: "Email:"
+    content: "Email: "
   }
   .col-infos li.item-4:before {
-    content: "Skype:"
+    content: "Blog: "
+  }
+  .col-infos li.item-5:before {
+    content: "Skype: "
   }
 }
 @media (max-width: 375px) {
@@ -281,17 +291,14 @@ small {
     font-size: 12px;
     transition: all .4s;
   }
-  .col-infos li.item-1:before {
-    content: ""
-  }
-  .col-infos li.item-2:before {
-    content: ""
-  }
-  .col-infos li.item-3:before {
-    content: ""
-  }
+  .col-infos li.item-1:before,
+  .col-infos li.item-2:before,
+  .col-infos li.item-3:before,
   .col-infos li.item-4:before {
-    content: "Skype:"
+    content: ""
+  }
+  .col-infos li.item-5:before {
+    content: "Skype: "
   }
 }
 footer {
@@ -319,6 +326,9 @@ footer p {
 .social-icon a {
   color: #f1f1f1;
 	font-size: 4rem;
+}
+.social-icon a:hover {
+  color: #708090;
 }
 .navbar-background-color,
 .header-background-color,
