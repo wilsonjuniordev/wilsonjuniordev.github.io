@@ -54,11 +54,11 @@ nav.navbar-default .navbar-brand:focus {
 }
 .navbar-brand:after {
   transition: all .4s;
-  content: '{ } Wilson Junior';
+  content: '</> Wilson Junior';
 }
 @media (max-width: 375px) {
   .navbar-brand:after {
-      content: '{ } WJ';
+      content: '</> WJ';
   }
 }
 .nav.navbar-nav.navbar-right li a,
