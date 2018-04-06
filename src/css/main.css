@@ -168,8 +168,12 @@ h2 span:after{
 	font-size: 6.5rem;
 	text-align: center;
 }
-.hover-icon:hover {
-  color: #708090;
+.skills-icon-link {
+  color: #f1f1f1;
+}
+.skills-icon-link:hover,
+.skills-icon-link:focus {
+  text-decoration: none;
 }
 @media (max-width: 375px) {
   .skills-icon {
