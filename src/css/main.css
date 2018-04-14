@@ -286,9 +286,6 @@ small {
   .col-infos li.item-4:before {
     content: "Blog: "
   }
-  .col-infos li.item-5:before {
-    content: "Skype: "
-  }
 }
 @media (max-width: 375px) {
   .col-infos {
@@ -301,9 +298,7 @@ small {
   .col-infos li.item-4:before {
     content: ""
   }
-  .col-infos li.item-5:before {
-    content: "Skype: "
-  }
+
 }
 footer {
   padding-top: 15px;
