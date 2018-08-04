@@ -15,7 +15,7 @@ gulp.task('minify-css', function () {
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(gulp.dest('assets/css'))
         .pipe(browserSync.reload({stream:true}))
-        .pipe(gulp.dest('_includes'));
+        .pipe(gulp.dest('assets/css'));
 });
 
 /**

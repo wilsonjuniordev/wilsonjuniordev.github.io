@@ -196,6 +196,18 @@ section .item {
     color: #708090;
 }
 
+.col-infos li svg {
+    fill: #f1f1f1;
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.col-infos li svg:hover {
+    color: #708090;
+}
+
 small {
     font-size: 80%
 }
@@ -205,6 +217,9 @@ small {
         text-align: center;
     }
     .col-infos li span {
+        display: none;
+    }
+    .col-infos li svg {
         display: none;
     }
     .col-infos li.item-1:before {
@@ -238,4 +253,13 @@ small {
 .skills-background-color,
 .contact-background-color {
     background-color: #0A2C4A;
+}
+
+.social-icon svg {
+    fill: #f1f1f1;
+    width: 60px;
+}
+
+.social-icon svg:hover {
+    fill: #708090;
 }
