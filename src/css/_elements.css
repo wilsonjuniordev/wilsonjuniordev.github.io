@@ -1,0 +1,39 @@
+body {
+    font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    background-color: #f1f1f1;
+    height: 100%
+}
+
+p {
+    line-height: 25px;
+}
+
+ul {
+    color: #f1f1f1;
+    list-style: none;
+    padding: 0
+}
+
+ul li {
+    margin: 0;
+    padding: 0
+}
+
+ul.buttons {
+    font-size: 2em
+}
+
+ul.buttons li {
+    float: left;
+    margin-right: .5em
+}
+
+.blur {
+    filter: none;
+    transition: 0.3s;
+}
+
+.blur:hover {
+    filter: blur(2px);
+    transition: 0.5s;
+}

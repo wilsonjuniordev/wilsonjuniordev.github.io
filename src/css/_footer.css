@@ -1,0 +1,40 @@
+footer {
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+footer a {
+    color: #f1f1f1
+}
+
+footer a:hover {
+    color: #708090;
+    text-decoration: none
+}
+
+footer .row {
+    margin: 20px;
+}
+
+footer p {
+    color: #f1f1f1;
+}
+
+@media (max-width: 991px) {
+    .small-screen-text-center {
+        text-align: center;
+    }
+}
+
+.social-icon a {
+    color: #f1f1f1;
+    font-size: 4rem;
+}
+
+.social-icon a:hover {
+    color: #708090;
+}
+
+footer.footer-background-color {
+    background-color: #000A11;
+}
