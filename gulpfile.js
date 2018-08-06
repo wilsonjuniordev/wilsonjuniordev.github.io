@@ -10,7 +10,7 @@ var gulp = require('gulp'),
  * Css Task
  */
 gulp.task('minify-css', function () {
-    gulp.src(['src/css/home.css', 'src/css/confirmation.css', 'src/css/ecard.css'])
+    gulp.src(['src/css/home.css', 'src/css/confirmation.css'])
         .pipe(plumber())
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(gulp.dest('assets/css'))
