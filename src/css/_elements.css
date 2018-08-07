@@ -5,7 +5,8 @@ body {
 }
 
 p {
-    line-height: 25px;
+    line-height: 2;
+    letter-spacing: .069rem;
 }
 
 ul {

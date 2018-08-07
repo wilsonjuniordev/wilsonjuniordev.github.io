@@ -1,4 +1,5 @@
 footer {
+    background-color: #000A11;
     padding-top: 15px;
     padding-bottom: 5px;
 }
@@ -33,8 +34,4 @@ footer p {
 
 .social-icon a:hover {
     color: #708090;
-}
-
-footer.footer-background-color {
-    background-color: #000A11;
 }
