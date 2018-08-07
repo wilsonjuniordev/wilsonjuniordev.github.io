@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="follow, index">
+	<meta name="url" content="https://wilsonjunior.net/confirmation"/>
+
+	<meta name="description" content="Desenvolvedor e apaixonado por tecnologia">
+	<meta name="author" content="Wilson Junior">
+	<title>Wilson Junior</title>
+
+	<link href="/assets/css/confirmation.css" rel="stylesheet" />
+	<link href="https://wilsonjunior.net/confirmation" rel="canonical" />
+
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106782690-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments) };
+		gtag('js', new Date());
+
+		gtag('config', 'UA-106782690-1');
+
+	</script>
+
+</head>
+
+<body class="confirmation-background-color">
+
+	<section id="contato">
+		<div class="container text-center confirmation-margin">
+			<div class="text-center">
+				<h2>Obrigado por entrar em contato</h2>
+				<div class="row">
+					<p style="font-size: 1.15em;">Retornando ao site em <span id="time">5</span> segundos.</p>
+				</div>
+				<a href="https://wilsonjunior.net/" class="btn-section">Voltar</a>
+				<script>
+					var segundos = 5;
+					setInterval(function () {
+						segundos--;
+						document.getElementById('time').innerHTML = segundos;
+						if (!segundos) {
+							location.href = 'https://wilsonjunior.net/';
+						}
+					}, 1000);
+				</script>
+			</div>
+		</div>
+	</section>
+</body>
+
+</html>

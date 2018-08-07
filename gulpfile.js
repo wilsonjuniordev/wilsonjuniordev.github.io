@@ -4,7 +4,19 @@ var gulp = require('gulp'),
     cleanCSS = require('gulp-clean-css');
     rename = require("gulp-rename");
     uglify = require('gulp-uglify'),
-    concat = require('gulp-concat');
+    concat = require('gulp-concat'),
+    htmlmin = require('gulp-htmlmin');;
+
+/**
+ * HTML Task
+ */
+gulp.task('minify-html', function() {
+    gulp.src(['src/html/index.html', 'src/html/confirmation.html'])
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('./'))
+    .pipe(browserSync.reload({stream:true}))
+    .pipe(gulp.dest('./'));
+});
 
 /**
  * Css Task
@@ -46,16 +58,16 @@ gulp.task('browser-sync', function () {
  * Watch html files & reload BrowserSync
  */
 gulp.task('watch', function () {
+    gulp.watch('src/html/**/*.html', ['minify-html']);
     gulp.watch('src/css/**/*.css', ['minify-css']);
     gulp.watch('src/js/**/*.js', ['minify-js']);
-    gulp.watch('*.html');
 });
 
 /**
  * Default task, running just `gulp` will compile the stylus,
  * launch BrowserSync & watch files.
  */
-gulp.task('default', ['minify-js', 'minify-css', 'browser-sync', 'watch']);
+gulp.task('default', ['minify-html', 'minify-css', 'minify-js', 'browser-sync', 'watch']);
 
 // build to deploy
-gulp.task('build', ['minify-js', 'minify-css']);
+gulp.task('build', ['minify-html', 'minify-css', 'minify-js']);
