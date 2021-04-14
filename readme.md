@@ -1,6 +1,6 @@
-# [wilsonjunior.net](https://wilsonjunior.net/) <img src="https://github.com/wilsonjuniorwj/wilsonjuniorwj.github.io/blob/master/assets/img/favicon/favicon-16x16.png">
+# [wilsonjunior.dev](https://wilsonjunior.dev/) <img src="https://github.com/wilsonjuniordev/wilsonjuniordev.github.io/blob/master/assets/img/favicon/favicon-16x16.png">
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/wilsonjuniorwj/wilsonjuniorwj.github.io/master/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/wilsonjuniordev/wilsonjuniordev.github.io/master/LICENSE)
 
 ## Starting
 
