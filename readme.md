@@ -27,7 +27,7 @@ It was developed with the following technologies:
 - [HTML](https://devdocs.io/html)
 - [CSS](https://devdocs.io/css)
 - [JavaScript](https://devdocs.io/javascript)
-- [Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/introduction)
+- [Bootstrap](https://getbootstrap.com)
 - [Gulp](https://gulpjs.com)
 
 ## :notebook: Running
