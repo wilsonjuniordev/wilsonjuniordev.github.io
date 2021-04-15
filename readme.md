@@ -1,6 +1,6 @@
 <h1 align="center">
     <a href="https://wilsonjunior.dev/" target="_blank">
-      <img alt="Logo Wilson Junior Dev" title="#wilson-junior-dev" src="assets/img/others/template-github.png" />
+      <img alt="Logo Wilson Junior Dev" title="#wilson-junior-dev" src="assets/img/others/banner-wilsonjunior-dev.png" />
     </a>
 </h1>
 
@@ -18,7 +18,7 @@
 
 ## :computer: Project
 
-The project was developed for my portfolio. It is hosted on Github Pages.
+The project was developed for my portfolio. It is hosted on Github Pages. Project link: [wilsonjunior.dev](http://wilsonjunior.dev)
 
 ## :rocket: Technologies
 
@@ -48,10 +48,10 @@ npm install
 gulp
 ```
 
-##: memo: License
+## :memo: License
 
-It is free under the MIT license. See the [LICENSE] file for more details.
+It is free under the MIT license. See the [LICENSE](LICENSE) file for more details.
 
 ---
 
-Done with hours in front of: computer: by [Wilson Junior] (http://wilsonjunior.dev)
+Done with hours in front of :computer: by [Wilson Junior](http://wilsonjunior.dev)
