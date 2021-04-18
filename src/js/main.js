@@ -1,16 +1,19 @@
-$(function () {
+document.addEventListener('scroll', () => {
+    const header = document.querySelector('#topo');
 
-    scrollTo();
-
+    if (window.scrollY > 48) {
+        header.classList.add('active');
+    } else {
+        header.classList.remove('active');
+    }
 });
 
-function scrollTo() {
-    $().ready(function ($) {
-        $(".scrollTo").click(function (event) {
-            event.preventDefault();
-            $('html,body').animate({ 
-                scrollTop: $(this.hash).offset().top - 50 
-            }, 600);
-        });
-    });
+function toggleElementsById(id) {
+    const ids = typeof id !== 'string' ? [ ...id ] : [ id ];
+
+    for (id of ids) {
+        const element = document.getElementById(id);
+
+        element.classList.toggle('active');
+    }
 }
