@@ -9,7 +9,7 @@
 </h4>
 
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/v/tag/wilsonjuniordev/wilsonjuniordev.github.io">
+  <img alt="GitHub language count" src="https://img.shields.io/github/v/tag/wilsonjuniordev/wilsonjuniordev.github.io?label=version">
 
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/wilsonjuniordev/wilsonjuniordev.github.io">
 
@@ -29,7 +29,6 @@ It was developed with the following technologies:
 - [HTML](https://devdocs.io/html)
 - [CSS](https://devdocs.io/css)
 - [JavaScript](https://devdocs.io/javascript)
-- [Bootstrap](https://getbootstrap.com)
 - [Gulp](https://gulpjs.com)
 
 ## :notebook: Running
